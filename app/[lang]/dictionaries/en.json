@@ -1,0 +1,38 @@
+{
+  "auth": {
+    "login_title": "sign in",
+    "login_description": "welcome back! ",
+    "login": "sign in",
+    "username": "user name",
+    "password": "password",
+    "logout": "Log out",
+    "first_name": "First Name",
+    "last_name": "last name",
+    "email": "E-mail",
+    "register_title": "Create an account",
+    "register_description": "To create a new account, please enter the required data.",
+    "register": "registration"
+  },
+  "common": {
+    "home": "Home",
+    "comments": "Comments",
+    "select_language": "Select language",
+    "english": "English",
+    "arabic": "Arabic",
+    "other-page": "Change Page",
+    "submitting": "Submitting",
+    "required": " this field is required",
+    "new_design": " New Design"
+  },
+  "comments": {
+    "comment": "comment",
+    "comments": "comments ",
+    "submit_comment": "Submit Comment"
+  },
+  "SEO": {
+    "title": "Massaq -Mahmoud Bakr",
+    "description": "React SSR with i18n",
+    "loginpagetitle": "Massaq - Login",
+    "registerpagetitle": "Massaq - Register."
+  }
+}

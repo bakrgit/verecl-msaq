@@ -1,0 +1,36 @@
+@import '~react-toastify/scss/main';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+
+#nprogress {
+  transform: scaleX(-1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999999;
+}
+
+#nprogress .bar {
+  background: hsl(169 28% 36%);
+}
+
+#nprogress .peg {
+  box-shadow: 0 0 10px hsl(169 28% 36%), 0 0 5px hsl(169 28% 36%) !important;
+}

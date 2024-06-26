@@ -1,0 +1,38 @@
+{
+  "auth": {
+    "login_title": "تسجيل الدخول",
+    "login_description": "مرحبًا بعودتك! لتسجيل الدخول، يرجى إدخال اسم المستخدم وكلمة المرور.",
+    "login": "تسجيل الدخول",
+    "logout": "تسجيل الخروج",
+    "username": "اسم المستخدم",
+    "password": "كلمة المرور",
+    "first_name": "الاسم الأول",
+    "last_name": "الاسم الأخير",
+    "email": "البريد الإلكتروني",
+    "register_title": "انشاء حساب",
+    "register_description": "لإنشاء حساب جديد، يرجى إدخال البيانات المطلوبة.",
+    "register": "تسجيل"
+  },
+  "common": {
+    "home": "الرئيسية",
+    "comments": "التعليقات",
+    "select_language": "اختر اللغة",
+    "english": "الإنجليزية",
+    "arabic": "العربية",
+    "other-page": "تبديل الصفحة",
+    "submitting": "جاري الإرسال...",
+    "required": " هذاالحقل مطلوب",
+    "new_design": "التصميم الجديد"
+  },
+  "comments": {
+    "comment": "تعليق",
+    "comments": "التعليقات ",
+    "submit_comment": "إرسال التعليق"
+  },
+  "SEO": {
+  "title": "شركه مساق - محمود بكر",
+  "description": "React SSR with i18n",
+    "loginpagetitle": "مساق - تسجيل الدخول",
+    "registerpagetitle": "مساق - انشا حساب."
+}
+}
