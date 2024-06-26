@@ -9,7 +9,7 @@ interface LoginPageProps {
 export async function generateMetadata({ params: { lang } }: LoginPageProps) {
   const dictionary = await getDictionary(lang);
   return {
-    title: `${dictionary.SEO.loginpagetitle}`,
+    title: `${dictionary.SEO.title}`,
     description: "شركه مساق",
     keywords: SEOKeywords,
     openGraph: {

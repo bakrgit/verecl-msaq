@@ -42,6 +42,7 @@ export async function generateMetadata({ params: { lang } }: any) {
   };
 }
 const CommentsPage = async ({ searchParams, params: { lang } }: Props) => {
+  const dictionary = await getDictionary(lang);
   // get comments from the server and revalidate when add new comment
   const comments: Comments = await getComments({
     skip: searchParams.skip || 0,
@@ -54,6 +55,7 @@ const CommentsPage = async ({ searchParams, params: { lang } }: Props) => {
         comments={comments}
         searchParams={searchParams}
         lang={lang}
+        dictionary={dictionary}
       />
     </>
   );

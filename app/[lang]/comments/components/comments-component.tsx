@@ -13,8 +13,9 @@ interface CommentsComponentProps {
     limit: number;
   };
   lang: string;
+  dictionary: any;
 }
-export default function CommentsComponent({ comments, searchParams, lang }: CommentsComponentProps) {
+export default function CommentsComponent({ dictionary, comments, searchParams, lang }: CommentsComponentProps) {
   const { comment, setComment, onSubmit, onPageChange, commentsData, loading, errorFetch } = useComments({
     comments,
     searchParams,
@@ -30,7 +31,7 @@ export default function CommentsComponent({ comments, searchParams, lang }: Comm
               className="text-lg font-bold"
               href="/"
             >
-              الرئيسية
+              {dictionary?.comments.home}
             </Link>
             <h2 className="text-lg font-bold text-gray-900 dark:text-white lg:text-2xl">{10}</h2>
           </div>
@@ -43,7 +44,7 @@ export default function CommentsComponent({ comments, searchParams, lang }: Comm
                 htmlFor="comment"
                 className="sr-only"
               >
-                تعليق
+                {dictionary?.comments.comment}
               </label>
               <textarea
                 id="comment"
@@ -63,7 +64,7 @@ export default function CommentsComponent({ comments, searchParams, lang }: Comm
               disabled={false}
               className="bg-primary-700 focus:ring-primary-200 dark:focus:ring-primary-900 hover:bg-primary-800 inline-flex items-center rounded-lg px-4 py-2.5 text-center text-xs font-medium text-white focus:ring-4"
             >
-              {loading ? "جاري الإرسال..." : "إرسال التعليق"}
+              {loading ? dictionary.common.submitting : dictionary?.comments.submit_comment}
             </button>
           </form>
           {/*comment maps*/}
